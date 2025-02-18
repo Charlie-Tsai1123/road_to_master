@@ -1,0 +1,13 @@
+[
+    {
+        "equipment": "Robotic arm (specify make and model if known, e.g., UR5e collaborative robot, Fanuc R-2000iB robot)",
+        "order": [
+            "1. **Verify Power and Safety:** Ensure the robotic arm is powered on and in a safe operational state.  Confirm all safety interlocks are engaged and the workspace is clear of obstructions.",
+            "2. **Establish Target Orientation:** Define the desired target orientation using appropriate coordinates (e.g., Euler angles, quaternions, rotation matrix) relative to a known reference frame (e.g., base frame of the robot). Specify the required accuracy and tolerance.",
+            "3. **Plan the Trajectory (Optional but Recommended):**  Use the robot's control system or external planning software to generate a smooth and collision-free trajectory to reach the desired orientation. This step minimizes stress on the robot and ensures precise movement.",
+            "4. **Execute the Movement:** Send the calculated trajectory or target orientation command to the robot controller. Depending on the system, this might involve using a specific programming language (e.g., RAPID for ABB robots, Python with a robotics library for ROS-based systems) or a graphical user interface (GUI).",
+            "5. **Verify Orientation:** After the movement completes, verify that the robotic arm has achieved the desired orientation within the specified tolerance. Use sensors, visual feedback, or other verification methods as necessary.",
+            "6. **Error Handling:** Implement error handling procedures to address potential issues such as unexpected collisions, communication errors, or deviations from the desired orientation.  Consider the inclusion of safety stops and alarms."
+        ]
+    }
+]
